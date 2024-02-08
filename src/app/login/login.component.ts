@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginUser } from '../Model/LoginUser';
 import { LoginService } from './login.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,10 +10,11 @@ import { LoginService } from './login.service';
 })
 export class LoginComponent implements OnInit {
 
-  user: LoginUser = new LoginUser("alma");
+  user: LoginUser = new LoginUser("atuny0", "9uQFF1Lh");
 
   constructor(
-    private loginService: LoginService
+    private loginService: LoginService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -24,9 +26,10 @@ export class LoginComponent implements OnInit {
     this.loginService.login(this.user).subscribe(
       //next
       res=>{
-        console.log(res)
-        alert("sikeres bejelentkezés")
-
+        console.log(res);
+        //alert("sikeres bejelentkezés");
+        this.loginService.setToken(res.token)
+        this.router.navigate(["home"]);
         //ha 200 státusz
       },
       //error
