@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginUser } from '../Model/LoginUser';
 import { LoginService } from './login.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -14,12 +14,14 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private loginService: LoginService,
-    private router: Router
+    private router: Router,
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
     if(this.loginService.isLoggedIn()) this.router.navigate(["home"])
     console.log(this.user)
+    console.log(this.route.snapshot.url)
   }
 
   login(){

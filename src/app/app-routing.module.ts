@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './auth.guard';
+import { SwapiComponent } from './swapi/swapi.component';
 
 const routes: Routes = [
   
@@ -13,6 +14,11 @@ const routes: Routes = [
   {
     path: "home",
     component: HomeComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: "swapi",
+    component: SwapiComponent,
     canActivate: [AuthGuard]
   },
   /*{

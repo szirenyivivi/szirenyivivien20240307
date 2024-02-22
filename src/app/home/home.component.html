@@ -1,5 +1,10 @@
+<!--<app-nav></app-nav>-->
+
 <p>home works!</p>
 <button (click)="loginService.logout()">Logout</button>
+
+<mat-slide-toggle  [checked]="true">Slide me!</mat-slide-toggle>
+
 <input [(ngModel)]="isVisible" type="checkbox" id="visibleCbx">
 <label for="visibleCbx">Visible</label>
 <div *ngIf="isVisible" id="feltetelesenLatszik">

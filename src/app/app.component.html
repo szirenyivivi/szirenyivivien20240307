@@ -1,3 +1,4 @@
 <!--<app-login></app-login>
 <app-home></app-home>-->
-<router-outlet></router-outlet>
+<app-nav [navButtons]="['alma']" *ngIf="loginService.isLoggedIn()"></app-nav>
+<router-outlet ></router-outlet>
