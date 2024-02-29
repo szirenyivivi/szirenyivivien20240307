@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 import { NavComponent } from './nav/nav.component';
 import { SwapiComponent } from './swapi/swapi.component';
@@ -30,7 +31,8 @@ import { SwapiComponent } from './swapi/swapi.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

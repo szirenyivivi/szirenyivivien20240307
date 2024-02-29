@@ -13,12 +13,12 @@ export class HomeComponent implements OnInit {
   isVisible: boolean = true;
 
   numbers: number[] = [1, 2, 3];
-  formValues: {name: string, quantity?: number, color?: string} = {
+  formValues: Product = {
     name: "", quantity: 0, color: ""
   };
 
 
-  products: {name: string, quantity?: number, color?: string}[] = [
+  products: Product[] = [
     {name: "Szilva", quantity: 12, color: "Lila"},
     {name: "Alma", quantity: 1 },
     {name: "Körte", quantity: 20, color: "Sárga"},
@@ -64,4 +64,11 @@ export class HomeComponent implements OnInit {
   /*logout(){
     this.loginService.logout()
   }*/
+}
+
+type Product = 
+{
+  name: string,
+  quantity?: number,
+  color?: string
 }
