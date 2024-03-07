@@ -15,6 +15,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 
 import { NavComponent } from './nav/nav.component';
 import { SwapiComponent } from './swapi/swapi.component';
+import { UserComponent } from './user/user.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { SwapiComponent } from './swapi/swapi.component';
     LoginComponent,
     HomeComponent,
     NavComponent,
-    SwapiComponent
+    SwapiComponent,
+    UserComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
