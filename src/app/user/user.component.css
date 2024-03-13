@@ -1,0 +1,91 @@
+.userContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    /* background-color: darkslategrey; */
+}
+.left-container{
+    border-right: 2px solid darkslategray;
+    width: 300px;
+    padding-top: 100px;
+}
+.profile-picture{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 1px solid black;
+    object-fit: cover;
+}
+.user-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.right-container{
+    text-align: left;
+}
+.personal-datas-input{
+    display: flex;
+    flex-direction: row;
+    column-gap: 140px;
+}
+.personal-datas{
+   font-size: 22px;
+   font-weight: medium;
+}
+.address-input{
+    display: flex;
+    flex-direction: row;
+    column-gap: 140px;
+}
+.address{
+    font-size: 22px;
+    font-weight: medium;
+    padding-top: 5px;
+}
+.geographical-location-input{
+    display: flex;
+    flex-direction: row;
+    column-gap: 140px;
+}
+.geographical-location{
+    font-size: 22px;
+    font-weight: medium;
+    padding-top: 5px;
+}
+.company-input{
+    display: flex;
+    flex-direction: row;
+    column-gap: 140px;
+}
+.company{
+    font-size: 22px;
+    font-weight: medium;
+    padding-top: 5px;
+}
+p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input {
+    height: 25px;
+    width: 180px;
+    border-radius: 15px;
+    border: 1px solid rgb(115, 115, 115);
+    padding-left: 10px;
+}
+.first-section{
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px;
+}
+.second-section{
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px;
+}
+.third-section{
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px;
+}
+.fourth-section{
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px;
+}

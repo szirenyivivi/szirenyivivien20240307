@@ -1,1 +1,82 @@
-<p>Név: {{userData.name}}</p>
+<div class="userContainer">
+    <div class="left-container">
+      <img class="profile-picture" src="https://png.pngitem.com/pimgs/s/22-223925_female-avatar-female-avatar-no-face-hd-png.png">
+      <h2 class="user-name">{{userData.name}}</h2>
+    </div>
+
+    <div class="right-container">
+        <div class="first-section">
+            <p class="personal-datas">Personal Datas:</p>
+            <div class="personal-datas-input">
+                <div class="username-input">
+                    <p>Username:</p>
+                    <input type="text" placeholder="{{userData.username}}">
+                </div>
+                <div class="email-input">
+                    <p>Email:</p>
+                    <input type="text" placeholder="{{userData.email}}">
+                </div>
+                <div class="phone-input">
+                    <p>Phone:</p>
+                    <input type="text" placeholder="{{userData.phone}}">
+                </div>
+                <div class="website-input">
+                    <p>Website:</p>
+                    <input type="text" placeholder="{{userData.website}}">
+                </div>
+            </div>
+        </div>
+        <div class="second-section">
+            <p class="address">Address:</p>
+            <div class="address-input">
+                <div class="street-input">
+                    <p>Street:</p>
+                    <input type="text" placeholder="{{userData.address.street}}">
+                </div>
+                <div class="suite-input">
+                    <p>Suite:</p>
+                    <input type="text" placeholder="{{userData.address.suite}}">
+                </div>
+                <div class="city-input">
+                    <p>City:</p>
+                    <input type="text" placeholder="{{userData.address.city}}">
+                </div>
+                <div class="zipcode-input">
+                    <p>Zipcode:</p>
+                    <input type="text" placeholder="{{userData.address.zipcode}}">
+                </div>
+            </div>
+        </div>
+        <div class="third-section">
+            <p class="geographical-location">Geographical location:</p>
+            <div class="geographical-location-input">
+                <div class="latitude-input">
+                    <p>Latitude:</p>
+                    <input type="text" placeholder="{{userData.address.geo.lat}}">
+                </div>
+                <div class="longitude-input">
+                    <p>Longitude:</p>
+                    <input type="text" placeholder="{{userData.address.geo.lng}}">
+                </div>
+            </div>
+        </div>
+        <div class="fourth-section">
+            <p class="company">Company:</p>
+            <div class="company-input">
+                <div class="companyName-input">
+                    <p>Company Name:</p>
+                    <input type="text" placeholder="{{userData.company.name}}">
+                </div>
+                <div class="catchPhrase-input">
+                    <p>Catch Phrase:</p>
+                    <input type="text" placeholder="{{userData.company.catchPhrase}}">
+                </div>
+                <div class="bs-input">
+                    <p>BS:</p>
+                    <input type="text" placeholder="{{userData.company.bs}}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
